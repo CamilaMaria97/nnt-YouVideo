@@ -1,0 +1,117 @@
+/*
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ */
+* {
+    -webkit-tap-highlight-color: rgba(0,0,0,0); /* make transparent link selection, adjust last value opacity 0 to 1.0 */
+}
+
+body {
+    -webkit-touch-callout: none;                /* prevent callout to copy image, etc when tap to hold */
+    -webkit-text-size-adjust: none;             /* prevent webkit from resizing text to fit */
+    -webkit-user-select: none;                  /* prevent copy paste, to allow, change 'none' to 'text' */
+    font-family:'HelveticaNeue-Light', 'HelveticaNeue', Helvetica, Arial, sans-serif;
+    font-size:12px;
+    height:100%;
+    margin:0px;
+    padding:0px;
+    width:100%;
+}
+.block {display: block;width: 100%}
+.no-padding {
+    padding: 0px !important;
+}
+.w100{width: 100%}
+.mainlogo{height:200px;}
+.lgh{line-height: 1.1em }
+.mt0{margin-top: 0;}
+.mt20{margin-top: 20px}
+.absmiddle{vertical-align: middle;}
+.text-right{text-align: right;}
+.text-center{text-align: center;}
+.header-image{max-width: 75%; margin-top:30px; margin-bottom: 30px}
+.fondo{ background-color: #000000}
+.login.list{margin-bottom: 0}
+.login .item-input{margin-bottom: 25px}
+.placeholder-icon{font-size: 1.5em; color:#000000;}
+.bar.bar-positive {
+background-color: #000000;
+    border-color: transparent;
+    color: #fff;
+}
+.casos img{width: 100%; max-width: 150px}
+.casos h2{font-size: 1.2em}
+.casos .col{position: relative;}
+.casos .item{padding-top: 0; padding-bottom: 0}
+.casos .row{padding: 0}
+ion-side-menu.menu-left.menu {
+ 
+}
+ion-side-menu.menu-left.menu .list, ion-side-menu.menu-left.menu .list .item{background-color: transparent;}
+ion-side-menu.menu-left.menu .list .item .icon{font-size: 1.5em; margin-right: 5px}
+.gallery {
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    font-size: 1.2em;
+    padding-top:0;
+    margin-top: 10px
+}
+.gallery > .col{padding-top: 0}
+.gallery span{vertical-align: super;line-height: 1.1em}
+.gallery img, .singlefoto img{width: 100%}
+.button-bar > .button{ padding: 0 10px;color:#ff0000;border-color:#ffffff}
+.button-bar > .button.active, .button-bar.ficha > .button.activated { background-color:#ff0000; color: #fff; opacity: 1 }
+.ionic .item-thumbnail-left > img:first-child, .ionic .item-thumbnail-left .item-image, .ionic .item-thumbnail-left .item-content > img:first-child, .ionic .item-thumbnail-left .item-content .item-image{
+    max-height: 40px;
+    max-width: 40px;
+}
+.item-thumbnail-left h2{padding-top: 10px}
+.list .item.item-accordion {
+  line-height: 38px;color: #fff;
+  padding-top: 0; background-color: #000000;
+  padding-bottom: 0;
+  transition: 0.09s all linear;
+}
+.list .item.item-accordion.ng-hide {
+  line-height: 0px;
+}
+.list .item.item-accordion.ng-hide-add,
+.list .item.item-accordion.ng-hide-remove {
+  display: block !important;
+}
+.item h2.title{font-size: 1.4em; margin-bottom: 20px}
+.item-text-center
+{
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    height: 100%;
+}
+.logocont{margin-top: 44px; text-align: center;}
+.ionc{
+  margin-top: 285px;
+}

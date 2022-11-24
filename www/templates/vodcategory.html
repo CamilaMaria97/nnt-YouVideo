@@ -1,0 +1,12 @@
+<ion-view view-title="Categoría" ng-controller="VodCategoryCtrl">
+<ion-nav-title>{{data.groups}}</ion-nav-title>
+  <ion-content >
+  <div class="row gallery">
+  <div class="col col-50" ng-repeat="item in items">
+        <img src="{{item.thumbnailSmall}}" ng-click="irvod(item)">
+        <p class="lgh">{{item.name}}</p>
+     
+    </div>
+    </div>
+  </ion-content>
+</ion-view>

@@ -1,0 +1,17 @@
+<ion-view view-title="ÑÑTV" ng-controller="ListadoCtrl" hide-back-button="true">
+<ion-nav-buttons side="right">
+    <button class="button button-icon icon ion-ios-loop-strong" ng-click="reload()"></button> 
+    <button class="button button-icon icon ion-ios-search-strong" ng-click="search(items)"></button>
+</ion-nav-buttons>
+  <ion-content >
+ <div class="list casos">
+      <div ng-repeat="item in items" class="item item-no-wrap" ng-click="abrirstream(item, items)" >  <!-- ng-show="(item.logicalChannel<500)" -->
+      <div class="row">
+      <div class="col col-10"><div class="item-text-center">{{item.logicalChannel}}</div></div>
+      <div class="col col-70"><div class="item-text-center"><h2>{{item.title}}</h2></div></div>
+      <div class="col col-20 text-center"><img src="{{item.imageSmall}}"></div>
+      </div>
+       </div>
+ </div>
+  </ion-content>
+</ion-view>

@@ -1,0 +1,26 @@
+<ion-view view-title="VOD" ng-controller="VodCtrl" hide-back-button="true">
+<ion-nav-buttons side="right">
+    <button class="button button-icon icon ion-ios-loop-strong" ng-click="reload()"></button> 
+</ion-nav-buttons>
+  <ion-content>
+ <div class="list">
+<div ng-repeat="dato in items">
+       <ion-item class="menuitem item-stable" ng-show="((dato.groupItems.length>0) && isArray(dato.groupItems))"  
+                    ng-click="toggleGroup(dato)"
+                    ng-class="{active: isGroupShown(dato)}">
+              <i class="icon" ng-class="isGroupShown(dato) ? 'ion-minus' : 'ion-plus'"></i>
+            &nbsp;
+             {{dato.title}} 
+          </ion-item>
+      <ion-item class="item-accordion" ng-click="ircategoria(item.id)"   
+                    ng-repeat="item in dato.groupItems"
+                    ng-show="isGroupShown(dato)">
+            {{item.title}}
+      </ion-item>
+      <ion-item class="item-no-wrap" ng-show="((dato.groupItems.length==0) || !isArray(dato.groupItems))" ng-click="ircategoria(dato.id)"  >
+        <h2>{{dato.title}}</h2>
+      </ion-item>
+  </div>
+ </div>
+  </ion-content>
+</ion-view>

@@ -1,0 +1,17 @@
+<ion-view ng-controller="VodItemCtrl">
+ <ion-nav-title>{{data.groups}}</ion-nav-title>
+  <ion-content >
+   <img src="{{data.thumbnailLarge}}" class="w100">
+ <div class="list">
+ <div class="item item-text-wrap">
+   <h2 class="title">{{data.name}}</h2>
+    <p>Fecha: {{data.date | timestamp}}</p>
+      <p ng-show="(data.duration > 0)"> Duración: {{data.duration | duracion }}</p>
+      <p ng-show="(data.description.length > 0)">{{data.description}}</p>
+      <button class="button button-positive block" ng-click="reproducirvod(data.pageUrl)"> <!--presets[0].url-->
+      Reproducir
+  </button>
+  </div>
+  </div>
+  </ion-content>
+</ion-view>

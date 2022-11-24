@@ -1,0 +1,19 @@
+<ion-view view-title="Entra en tu cuenta" ng-controller="LoginCtrl" class="fondo">
+   <ion-content class="padding text-center">
+   <img class='header-image' src='img/youlogo1.png' />
+      <div class="list login">
+  <label class="item item-input">
+   <i class="icon ion-person placeholder-icon"></i>
+       <input type="text" placeholder="Usuario" ng-model="values.email">
+  </label>
+  <label class="item item-input">
+   <i class="icon ion-key placeholder-icon"></i>
+       <input type="password" placeholder="Contraseña" ng-model="values.contrasena">
+  </label>
+   
+  </div>
+  <button class="button button-positive block" ng-click="hacerlogin()">
+      Iniciar sesión
+  </button>
+  </ion-content>
+</ion-view>

@@ -1,0 +1,25 @@
+<ion-view ng-controller="CanalItemCtrl">
+ <ion-nav-title>{{data.title}}</ion-nav-title>
+ <div class="logocont"> <img src="{{data.imageLarge}}" class="mainlogo"></div>
+ <div class="list">
+ <div class="item">
+      <p ng-show="(data.description.length > 0)">{{data.description}}</p>
+      <button class="button button-positive block" ng-click="reproducircanal()" >
+      Reproducir
+  </button>
+  </div>
+  </div>
+  <ion-content class="ionc">
+   <div class="list">
+  <div class="item item-thumbnail-left item-text-wrap" href="#" ng-repeat="item in items">
+      <img src="{{item.info.imageSmall}}">
+      <h2 class="mt0">{{item.description.eng.name}}</h2>
+      <p>{{item.description.eng.shortDescription}}<br>{{item.info.startTime |  date:'d - MMMM. HH:mm' : 'UTC'}}<br>Duración: {{(item.info.duration | duracion)}}</p>
+    </div>
+  </div>
+
+
+  </ion-content>
+</ion-view>
+ 
+     

@@ -1,0 +1,36 @@
+<ion-side-menus enable-menu-with-back-views="true">
+  <ion-side-menu-content>
+    <ion-nav-bar class="bar-positive" align-title="left">
+      <ion-nav-back-button>
+      </ion-nav-back-button>
+
+      <ion-nav-buttons side="left">
+        <button class="button button-icon button-clear ion-navicon" menu-toggle="left">
+        </button>
+      </ion-nav-buttons>
+    </ion-nav-bar>
+    <ion-nav-view name="menuContent"></ion-nav-view>
+  </ion-side-menu-content>
+
+  <ion-side-menu side="left" ng-controller="MenuCtrl" >
+    <ion-header-bar class="bar-positive">
+   
+    </ion-header-bar>
+    <ion-content >
+      <ion-list>
+      <ion-item nav-clear item-type="item-icon-left" menu-close href="" ng-click="desconectar()">
+           <span class="icon-leftmenu"><i class="icon ion-person"></i></span> <span class="icon-label">Logout</span>
+        </ion-item>
+        <ion-item nav-clear item-type="item-icon-left" menu-close href="#/app/listado">
+           <span class="icon-leftmenu"><i class="icon ion-monitor"></i></span> <span class="icon-label">Televisión</span>
+        </ion-item>
+        <ion-item nav-clear item-type="item-icon-left" menu-close href="#/app/vod" > <!-- ng-show="false" -->
+           <span class="icon-leftmenu"><i class="icon ion-play"></i></span> <span class="icon-label">VOD</span>
+        </ion-item>
+        <ion-item nav-clear item-type="item-icon-left" menu-close href="" ng-click="salir()">
+           <span class="icon-leftmenu"><i class="icon ion-reply"></i></span> <span class="icon-label">Salir de la app</span>
+        </ion-item>
+      </ion-list>
+    </ion-content>
+  </ion-side-menu>
+</ion-side-menus>
